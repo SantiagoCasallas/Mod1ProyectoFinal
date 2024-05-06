@@ -1,5 +1,8 @@
 package PatronesEstructurales.Composite.View;
 
-class Vista {
+public class Vista {
 
+  public void mostrar(String mensaje) {
+    System.out.println(mensaje);
+  }
 }
