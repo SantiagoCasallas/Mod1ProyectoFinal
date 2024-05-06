@@ -8,4 +8,21 @@ public class Donacion {
         this.name = name;
         this.peso = peso;
     }
+
+    public String getNombre() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
 }
