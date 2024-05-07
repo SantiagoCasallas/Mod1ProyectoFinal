@@ -10,7 +10,6 @@ public class Test {
     Donacion donacion1 = new Donacion("Bulto de papas", 15);
     Donacion donacion2 = new Donacion("Caja de atun", 20);
     Donacion donacion3 = new Donacion("Caja de atun", 490);
-    Vista vista = new Vista();
 
     Transporte camion = new Transporte("camion", 500);
 

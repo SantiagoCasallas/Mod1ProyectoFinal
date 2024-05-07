@@ -2,7 +2,6 @@ package PatronesCreacionales.Prototype.Modelo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class KitRopa extends Kit {
 
@@ -12,7 +11,7 @@ public class KitRopa extends Kit {
     Elemento item4 = new Elemento("Medias", "5");
     Elemento item5 = new Elemento("Interiores", "5");
 
-    public ArrayList<Elemento> kitAlimentos = new ArrayList<>(Arrays.asList(item1, item2, item3, item4, item5));
+    public ArrayList<Elemento> kitRopa = new ArrayList<>(Arrays.asList(item1, item2, item3, item4, item5));
 
     public KitRopa(String nombre) {
         super(nombre);
@@ -23,15 +22,19 @@ public class KitRopa extends Kit {
     }
 
     public void contenidoMostrar() {
-        for (Elemento elemento : kitAlimentos) {
+        for (Elemento elemento : kitRopa) {
             vista.mostrar(elemento.getNombre() + ": " + elemento.getCantidad());
         }
+    }
+
+    public void agregar(Elemento elemento) {
+        kitRopa.add(elemento);
     }
 
     @Override
     public Kit clone() {
 
-        KitAlimentos kit = new KitAlimentos("kitClonado");
+        Kit kit = new KitRopa("Kit de ropa clonado");
         return kit;
 
     }

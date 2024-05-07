@@ -6,7 +6,7 @@ import PatronesCreacionales.Prototype.View.Vista;
 
 public abstract class Kit implements Cloneable {
     public String nombre;
-    public ArrayList<Elemento> kitAlimentos = new ArrayList<>();
+    public ArrayList<Elemento> kit = new ArrayList<>();
     Vista vista = new Vista();
 
     public Kit(String nombre) {
@@ -18,6 +18,10 @@ public abstract class Kit implements Cloneable {
     }
 
     public void contenidoMostrar() {
+    }
+
+    public void agregar(Elemento elemento) {
+        kit.add(elemento);
     }
 
     public abstract Kit clone();

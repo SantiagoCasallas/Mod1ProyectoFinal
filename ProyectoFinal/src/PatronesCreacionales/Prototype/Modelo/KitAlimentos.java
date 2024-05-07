@@ -2,7 +2,6 @@ package PatronesCreacionales.Prototype.Modelo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class KitAlimentos extends Kit {
 
@@ -28,10 +27,14 @@ public class KitAlimentos extends Kit {
         }
     }
 
+    public void agregar(Elemento elemento) {
+        kitAlimentos.add(elemento);
+    }
+
     @Override
     public Kit clone() {
 
-        KitAlimentos kit = new KitAlimentos("kitClonado");
+        Kit kit = new KitAlimentos("Kit de almentos clonado");
         return kit;
 
     }

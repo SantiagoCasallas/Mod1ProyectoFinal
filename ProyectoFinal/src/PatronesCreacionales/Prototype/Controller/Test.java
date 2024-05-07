@@ -1,5 +1,8 @@
 package PatronesCreacionales.Prototype.Controller;
 
+import javax.swing.text.ElementIterator;
+
+import PatronesCreacionales.Prototype.Modelo.Elemento;
 import PatronesCreacionales.Prototype.Modelo.Kit;
 import PatronesCreacionales.Prototype.Modelo.KitAlimentos;
 import PatronesCreacionales.Prototype.Modelo.KitRopa;
@@ -23,5 +26,6 @@ public class Test {
         Kit kitRopa2 = (Kit) kitRopa1.clone();
         vista.mostrar("\nEl " + kitRopa2.getNombre() + " es");
         kitRopa2.contenidoMostrar();
+
     }
 }
