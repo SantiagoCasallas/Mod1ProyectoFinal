@@ -1,7 +1,7 @@
 package PatronesEstructurales.Proxy.Controller;
 
+import Interfaz.Interfaz;
 import PatronesEstructurales.Proxy.Model.Proxy;
-import PatronesEstructurales.Proxy.View.Interfaz;
 
 public class Test {
 
