@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public class Test {
 
+  @SuppressWarnings("static-access")
   public static void main(String[] args) {
     Interfaz vista = new Interfaz();
     ArrayList<Producto> bodega = new ArrayList<Producto>();
