@@ -1,15 +1,15 @@
-package PatronesEstructurales.Flyweight.View;
+package Interfaz;
 
 import java.util.Scanner;
 
-public class Vista {
+public class Interfaz {
 
   public void mostrar(String mensaje) {
     System.out.println(mensaje);
   }
 
-  @SuppressWarnings("resource")
   public String capturar() {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     String texto = scanner.next();
     return texto;

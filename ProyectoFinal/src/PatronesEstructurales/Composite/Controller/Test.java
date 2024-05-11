@@ -1,7 +1,7 @@
 package PatronesEstructurales.Composite.Controller;
 
-import PatronesEstructurales.Composite.Model.*;
-import PatronesEstructurales.Composite.View.Vista;
+import PatronesEstructurales.Composite.Model.Donacion;
+import PatronesEstructurales.Composite.Model.Transporte;
 
 public class Test {
 
@@ -18,6 +18,5 @@ public class Test {
     camion.agregarCarga(donacion2);
     camion.agregarCarga(donacion3);
     camion.mostrarCarga(); //
-
   }
 }

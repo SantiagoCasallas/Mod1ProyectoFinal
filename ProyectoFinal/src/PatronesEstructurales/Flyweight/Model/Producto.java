@@ -16,4 +16,10 @@ public abstract class Producto {
   public String getNombre() {
     return nombre;
   }
+
+  @Override
+  public String toString() {
+    // TODO Auto-generated method stub
+    return "Producto: " + nombre + ", Cantidad: " + cantidad;
+  }
 }

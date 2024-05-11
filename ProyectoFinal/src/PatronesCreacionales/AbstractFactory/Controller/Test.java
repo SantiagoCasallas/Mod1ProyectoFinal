@@ -1,10 +1,10 @@
 package PatronesCreacionales.AbstractFactory.Controller;
 
+import Interfaz.Interfaz;
 import PatronesCreacionales.AbstractFactory.Model.Donaciones.Donaciones;
 import PatronesCreacionales.AbstractFactory.Model.Fabricas.AbstractFactory;
 import PatronesCreacionales.AbstractFactory.Model.Fabricas.FabricaAlimentoAire;
 import PatronesCreacionales.AbstractFactory.Model.Transporte.Transporte;
-import PatronesCreacionales.AbstractFactory.View.Vista;
 
 public class Test {
 
@@ -12,7 +12,7 @@ public class Test {
     Donaciones donacion;
     Transporte transporte;
     AbstractFactory factory;
-    Vista vista = new Vista();
+    Interfaz vista = new Interfaz();
     factory = new FabricaAlimentoAire();
     donacion =
       factory.crearDonacion(

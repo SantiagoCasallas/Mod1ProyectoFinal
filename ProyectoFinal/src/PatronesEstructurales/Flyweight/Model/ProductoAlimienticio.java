@@ -16,4 +16,10 @@ public class ProductoAlimienticio extends Producto {
   public String getFechaCaducidad() {
     return fechaCaducidad;
   }
+
+  @Override
+  public String toString() {
+    // TODO Auto-generated method stub
+    return super.toString() + "Fecha de vencimiento: " + fechaCaducidad;
+  }
 }
