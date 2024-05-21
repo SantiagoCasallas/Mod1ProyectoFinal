@@ -10,4 +10,8 @@ public class ContenedorLimpieza extends Contenedor {
     }
     return contenedor.get(clave); //
   }
+
+  public int getTamañoContenedor() {
+    return contenedor.size();
+  }
 }

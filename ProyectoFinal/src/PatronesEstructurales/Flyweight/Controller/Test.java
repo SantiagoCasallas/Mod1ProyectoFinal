@@ -22,12 +22,12 @@ public class Test {
       bodega.add((ProductoAlimienticio) producto);
     }
     vista.mostrar("Tamaño bodega alimentos: " + bodega.size());
-    vista.mostrar("Tamaño map Contenedor: " + flyweight.contenedor.size());
+    vista.mostrar("Tamaño map Contenedor: " + flyweight.getTamañoContenedor());
     producto = flyweight.getProductos("Arroz", "1 kg", "18 Mayo 2026");
     bodega.add((ProductoAlimienticio) producto);
     vista.mostrar("Añadiendo un producto con clave diferente");
     vista.mostrar("Tamaño bodega alimentos: " + bodega.size());
-    vista.mostrar("Tamaño map Contenedor: " + flyweight.contenedor.size());
+    vista.mostrar("Tamaño map Contenedor: " + flyweight.getTamañoContenedor());
     //----------------------------------------------------------------
     vista.mostrar("------------------------------------------------");
     Contenedor flyweight2 = new ContenedorLimpieza();
@@ -39,13 +39,11 @@ public class Test {
       bodega2.add(producto2);
     }
     vista.mostrar("Tamaño bodega alimentos: " + bodega2.size());
-    vista.mostrar("Tamaño map Contenedor: " + flyweight2.contenedor.size());
+    vista.mostrar("Tamaño map Contenedor: " + flyweight2.getTamañoContenedor());
     producto2 = flyweight2.getProductos("Arroz", "1 kg", "18 Mayo 2026");
     bodega2.add(producto2);
     vista.mostrar("Añadiendo un producto con clave diferente");
     vista.mostrar("Tamaño bodega artículos de limpieza: " + bodega2.size());
-    vista.mostrar("Tamaño map Contenedor: " + flyweight2.contenedor.size());
+    vista.mostrar("Tamaño map Contenedor: " + flyweight2.getTamañoContenedor());
   }
-  // public void testLimpieza() {
-
 }
