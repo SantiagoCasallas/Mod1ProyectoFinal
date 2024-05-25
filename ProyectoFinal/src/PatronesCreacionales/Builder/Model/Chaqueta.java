@@ -33,4 +33,13 @@ public class Chaqueta {
         this.talla = talla;
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+                " color='" + getColor() + "'" +
+                ", marca='" + getMarca() + "'" +
+                ", talla='" + getTalla() + "'" +
+                "}";
+    }
+
 }

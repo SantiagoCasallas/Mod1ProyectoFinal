@@ -1,26 +1,35 @@
 package PatronesCreacionales.Builder.Model;
 
 public class Donacion implements BuilderDonacion {
-    private String color, marca, talla, modelo;
 
-    public void setColor(String color) {
-        this.color = color;
+    private DonacionRopa donacionRopa = new DonacionRopa();
+
+    @Override
+    public void setZapatos(String modelo, String marca, String talla, String material) {
+        donacionRopa.setZapatos(new Zapatos(modelo, marca, talla, material));
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    @Override
+    public void setChaqueta(String color, String marca, String talla) {
+        // TODO Auto-generated method stub
+        donacionRopa.setChaqueta(new Chaqueta(color, marca, talla));
     }
 
-    public void setTalla(String talla) {
-        this.talla = talla;
+    @Override
+    public void setCamiseta(String modelo, String marca, String talla) {
+        // TODO Auto-generated method stub
+        donacionRopa.setCamiseta(new Camiseta(modelo, marca, talla));
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    @Override
+    public void setPantalon(String color, String marca, String talla, String material) {
+        // TODO Auto-generated method stub
+        donacionRopa.setPantalon(new Pantalon(color, marca, talla, material));
     }
 
+    @Override
     public DonacionRopa getDonacionRopa() {
-
-        return new DonacionRopa(color, marca, talla);
+        return donacionRopa;
     }
+
 }

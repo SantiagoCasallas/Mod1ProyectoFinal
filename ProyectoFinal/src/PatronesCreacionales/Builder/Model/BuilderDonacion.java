@@ -1,13 +1,13 @@
 package PatronesCreacionales.Builder.Model;
 
 public interface BuilderDonacion {
+    public void setZapatos(String modelo, String marca, String talla, String material);
 
-    public void setColor(String color);
+    public void setChaqueta(String color, String marca, String talla);
 
-    public void setMarca(String marca);
+    public void setCamiseta(String modelo, String marca, String talla);
 
-    public void setTalla(String talla);
+    public void setPantalon(String color, String marca, String talla, String material);
 
-    public void setModelo(String modelo);
-
+    public DonacionRopa getDonacionRopa();
 }

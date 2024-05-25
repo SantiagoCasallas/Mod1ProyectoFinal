@@ -1,12 +1,21 @@
 package PatronesCreacionales.Builder.Model;
 
 public class Pantalon {
-    private String color, marca, talla;
+    private String color, marca, talla, material;
 
-    public Pantalon(String color, String marca, String talla) {
+    public Pantalon(String color, String marca, String talla, String material) {
         this.color = color;
         this.marca = marca;
         this.talla = talla;
+        this.material = material;
+    }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
     }
 
     public String getColor() {
@@ -33,8 +42,13 @@ public class Pantalon {
         this.talla = talla;
     }
 
-    public String getTipo() {
-        return "pantalon";
+    @Override
+    public String toString() {
+        return "{" +
+                " color='" + getColor() + "'" +
+                ", marca='" + getMarca() + "'" +
+                ", talla='" + getTalla() + "'" +
+                "}";
     }
 
 }

@@ -2,40 +2,54 @@ package PatronesCreacionales.Builder.Model;
 
 public class DonacionRopa {
 
-    private String color, marca, talla, tipo;
+    private Chaqueta chaqueta;
+    private Pantalon pantalon;
+    private Camiseta camiseta;
+    private Zapatos zapatos;
 
-    public DonacionRopa(String color, String marca, String talla,String tipo) {
-        this.color = color;
-        this.marca = marca;
-        this.talla = talla;
-        this.tipo=tipo;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public String getTalla() {
-        return talla;
-    }
-
-    public void setTalla(String talla) {
-        this.talla = talla;
+    public DonacionRopa() {
 
     }
 
+    public Chaqueta getChaqueta() {
+        return this.chaqueta;
     }
 
+    public void setChaqueta(Chaqueta chaqueta) {
+        this.chaqueta = chaqueta;
+    }
 
+    public Pantalon getPantalon() {
+        return this.pantalon;
+    }
+
+    public void setPantalon(Pantalon pantalon) {
+        this.pantalon = pantalon;
+    }
+
+    public Camiseta getCamiseta() {
+        return this.camiseta;
+    }
+
+    public void setCamiseta(Camiseta camiseta) {
+        this.camiseta = camiseta;
+    }
+
+    public Zapatos getZapatos() {
+        return this.zapatos;
+    }
+
+    public void setZapatos(Zapatos zapatos) {
+        this.zapatos = zapatos;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                " chaqueta='" + getChaqueta() + "'" +
+                ", pantalon='" + getPantalon() + "'" +
+                ", camiseta='" + getCamiseta() + "'" +
+                ", zapatos='" + getZapatos() + "'" +
+                "}";
+    }
+}
