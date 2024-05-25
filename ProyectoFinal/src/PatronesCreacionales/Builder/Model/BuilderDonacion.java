@@ -2,12 +2,12 @@ package PatronesCreacionales.Builder.Model;
 
 public interface BuilderDonacion {
 
-    public void setTipo(TipoDonacion donacion);
-
-    public void setCantidad(int a);
-
     public void setColor(String color);
 
-    public void setDescripcion(String descripcion);
+    public void setMarca(String marca);
+
+    public void setTalla(String talla);
+
+    public void setModelo(String modelo);
 
 }

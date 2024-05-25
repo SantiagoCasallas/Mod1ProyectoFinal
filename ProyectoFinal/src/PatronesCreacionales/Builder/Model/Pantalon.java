@@ -1,18 +1,16 @@
 package PatronesCreacionales.Builder.Model;
 
-public class DonacionRopa {
+public class Pantalon {
+    private String color, marca, talla;
 
-    private String color, marca, talla, tipo;
-
-    public DonacionRopa(String color, String marca, String talla,String tipo) {
+    public Pantalon(String color, String marca, String talla) {
         this.color = color;
         this.marca = marca;
         this.talla = talla;
-        this.tipo=tipo;
     }
 
     public String getColor() {
-        return color;
+        return this.color;
     }
 
     public void setColor(String color) {
@@ -20,7 +18,7 @@ public class DonacionRopa {
     }
 
     public String getMarca() {
-        return marca;
+        return this.marca;
     }
 
     public void setMarca(String marca) {
@@ -28,14 +26,15 @@ public class DonacionRopa {
     }
 
     public String getTalla() {
-        return talla;
+        return this.talla;
     }
 
     public void setTalla(String talla) {
         this.talla = talla;
-
     }
 
+    public String getTipo() {
+        return "pantalon";
     }
 
-
+}

@@ -1,28 +1,26 @@
 package PatronesCreacionales.Builder.Model;
 
 public class Donacion implements BuilderDonacion {
-    private String descripcion, color;
-    private TipoDonacion tipo;
-    private int cantidad;
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
+    private String color, marca, talla, modelo;
 
     public void setColor(String color) {
         this.color = color;
     }
 
-    public void setTipo(TipoDonacion tipo) {
-        this.tipo = tipo;
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setTalla(String talla) {
+        this.talla = talla;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
     public DonacionRopa getDonacionRopa() {
 
-        return new DonacionRopa(descripcion, color, tipo, cantidad);
+        return new DonacionRopa(color, marca, talla);
     }
 }
