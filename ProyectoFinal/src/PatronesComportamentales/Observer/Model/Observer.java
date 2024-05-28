@@ -5,4 +5,6 @@ public interface Observer {
     public void agregarDonacion(Donacion don);
 
     public String getNombre();
+
+    public Stock getStock();
 }

@@ -4,7 +4,7 @@ import Interfaz.Interfaz;
 import java.util.ArrayList;
 
 public class Stock extends EditorDonaciones {
-    public ArrayList<Donacion> stock;
+    public static ArrayList<Donacion> stock = new ArrayList<Donacion>();
 
     public void addItem(Donacion d) {
         stock.add(d);
@@ -21,6 +21,10 @@ public class Stock extends EditorDonaciones {
 
     }
 
+    public ArrayList<Donacion> getStock() {
+        return stock;
+    }
+
     public Donacion getDonacion(int a) {
         return stock.get(a);
     }
@@ -33,7 +37,7 @@ public class Stock extends EditorDonaciones {
     public String toString() {
         Interfaz vista = new Interfaz();
         for (Donacion donacion : stock) {
-            vista.mostrar(donacion.getDescripcion());
+            vista.mostrar(donacion.getDescripcion() + " fecha:" + donacion.getFecha());
         }
         return "";
     }

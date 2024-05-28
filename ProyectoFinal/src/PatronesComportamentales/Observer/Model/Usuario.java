@@ -1,7 +1,9 @@
 package PatronesComportamentales.Observer.Model;
 
+import java.util.ArrayList;
+
 public class Usuario implements Observer {
-    public Stock stock;
+    public Stock stock = new Stock();
     private String nombre;
 
     public Usuario(String nombre) {
@@ -18,6 +20,10 @@ public class Usuario implements Observer {
 
         stock.addItem(don);
 
+    }
+
+    public Stock getStock() {
+        return stock;
     }
 
 }

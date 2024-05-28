@@ -3,15 +3,15 @@ package PatronesComportamentales.Observer.Model;
 import java.util.ArrayList;
 
 public class EditorDonaciones {
-    public ArrayList<Observer> donacionObserver = new ArrayList<Observer>();
+    public ArrayList<Observer> donacionObserver = new ArrayList<>();
 
-    public void añadirObserver(Observer d) {
-        donacionObserver.add(d);
+    public void añadirObserver(Observer o) {
+        donacionObserver.add(o);
     }
 
-    public void borrarObserver(Donacion d) {
+    public void borrarObserver(Observer o) {
         for (Observer donacion : donacionObserver) {
-            if (d == donacion) {
+            if (o == donacion) {
                 donacionObserver.remove(donacion);
             }
         }
