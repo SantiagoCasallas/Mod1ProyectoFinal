@@ -28,6 +28,7 @@ public class Test {
         // zapatos");
 
         vista.mostrar("El stock de " + usuario1.getNombre() + "es: ");
+        vista.mostrar(stock.toString());
         usuario1.getStock().toString();
         vista.mostrar("todos");
         stock.toString();
