@@ -9,6 +9,7 @@ public abstract class Donacion {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
+        this.condicion = condicion;
         if (condicion.toLowerCase() != "dañado") {
             valido = true;
         } else {

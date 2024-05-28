@@ -13,12 +13,6 @@ public class Mediador {
         this.sistema = sistema;
     }
 
-    // public String notificarCliente() {
-    // }
-
-    // public String notificarSistema() {
-    // }
-
     public boolean haLlegado() {
         return entregado;
     }

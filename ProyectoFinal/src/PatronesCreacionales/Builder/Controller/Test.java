@@ -21,12 +21,4 @@ public class Test {
     vista.mostrar(conjunto1.toString());
 
   }
-
-  // public static Director crearPantalon(DonacionRopa donacion) {
-  // Director director = new Director();
-  // Donacion builder = new Donacion();
-  // director.DonacionPantalon(builder);
-  // return director;
-  // }
-
 }
