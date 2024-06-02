@@ -2,8 +2,8 @@ package PatronesComportamentales.Estrategia.Controller;
 
 import Interfaz.Interfaz;
 import PatronesComportamentales.Estrategia.Model.Contexto;
-import PatronesComportamentales.Estrategia.Model.Donacion;
 import PatronesComportamentales.Estrategia.Model.EstrategiaDonacionLibro;
+import PatronesComportamentales.Estrategia.Model.EstrategiaDonacionRopa;
 import PatronesComportamentales.Estrategia.Model.Libro;
 import PatronesComportamentales.Estrategia.Model.Ropa;
 
@@ -18,6 +18,24 @@ public class Test {
         contexto.setEstrategiaDonacion(new EstrategiaDonacionLibro());
         contexto.realizarDonacion(ropa);
         contexto.realizarDonacion(libro);
+        contexto.setEstrategiaDonacion(new EstrategiaDonacionRopa()); //
+        contexto.realizarDonacion(ropa);
 
+        contexto.getRopa();
+        imprimir(contexto, vista, libro);
+        imprimir(contexto, vista, ropa);
+
+    }
+
+    static final void imprimir(Contexto contexto, Interfaz vista, Libro libro) {
+        for (Libro don : contexto.getLibros()) {
+            vista.mostrar(don.getDescripcion());
+        }
+    }
+
+    static final void imprimir(Contexto contexto, Interfaz vista, Ropa ropa) {
+        for (Ropa don : contexto.getRopa()) {
+            vista.mostrar(don.getDescripcion());
+        }
     }
 }

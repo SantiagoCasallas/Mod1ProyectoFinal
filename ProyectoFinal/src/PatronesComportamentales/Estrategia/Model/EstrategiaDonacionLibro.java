@@ -6,7 +6,6 @@ public class EstrategiaDonacionLibro implements EstrategiaDonacion {
     public void realizarDonacion(Libro don, Donaciones donaciones) {
         try {
             donaciones.donar((Libro) don);
-            System.out.println("se dono un libro " + don.getDescripcion());
         } catch (Exception e) {
             System.out.println("f");
 

@@ -1,8 +1,18 @@
 package PatronesComportamentales.Estrategia.Model;
 
+import java.util.ArrayList;
+
 public class Contexto {
     private EstrategiaDonacion estrategiaDonacion;
     Donaciones donaciones = new Donaciones();
+
+    public ArrayList<Libro> getLibros() {
+        return donaciones.getLibros();
+    }
+
+    public ArrayList<Ropa> getRopa() {
+        return donaciones.getRopa();
+    }
 
     public void setEstrategiaDonacion(EstrategiaDonacion estrategiaDonacion) {
         this.estrategiaDonacion = estrategiaDonacion;
