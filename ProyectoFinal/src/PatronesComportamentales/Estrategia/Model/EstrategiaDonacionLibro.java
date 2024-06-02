@@ -4,13 +4,8 @@ public class EstrategiaDonacionLibro implements EstrategiaDonacion {
 
     @Override
     public void realizarDonacion(Libro don, Donaciones donaciones) {
-        try {
-            donaciones.donar((Libro) don);
-        } catch (Exception e) {
-            System.out.println("f");
 
-            // TODO: handle exception
-        }
+        donaciones.donar((Libro) don);
 
     }
 

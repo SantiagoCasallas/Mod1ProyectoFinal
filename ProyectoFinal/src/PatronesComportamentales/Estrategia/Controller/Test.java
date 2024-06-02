@@ -11,13 +11,15 @@ public class Test {
     public static void main(String[] args) {
         Interfaz vista = new Interfaz();
 
-        Libro libro = new Libro("Cien años de soledad");
-        Ropa ropa = new Ropa("Camiseta roja");
+        Libro libro = new Libro("");
+
+        Ropa ropa = new Ropa("");
 
         Contexto contexto = new Contexto();
         contexto.setEstrategiaDonacion(new EstrategiaDonacionLibro());
-        contexto.realizarDonacion(ropa);
-        contexto.realizarDonacion(libro);
+        contexto.realizarDonacion(new Ropa("camiseta roja"));
+        contexto.realizarDonacion(new Libro("cien años de soledad"));
+        contexto.realizarDonacion(new Libro("el coronel no tiene quien le escriba"));
         contexto.setEstrategiaDonacion(new EstrategiaDonacionRopa()); //
         contexto.realizarDonacion(ropa);
 
