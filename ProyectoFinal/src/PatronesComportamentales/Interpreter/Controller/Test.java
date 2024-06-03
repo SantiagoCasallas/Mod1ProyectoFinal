@@ -15,10 +15,10 @@ public class Test {
         Context context = new Context();
         List<Expression> comandos = new ArrayList<>();
 
-        comandos.add(new AddDonacionExpression("RoPa"));
-        comandos.add(new AddDonacionExpression("alimentos"));
-        comandos.add(new AddDonacionExpression("ropa"));
-        comandos.add(new AddDonacionExpression("alimentos"));
+        comandos.add(new AddDonacionExpression("RoPa", "CAMISEA"));
+        comandos.add(new AddDonacionExpression("alimentos", "COMIDA"));
+        comandos.add(new AddDonacionExpression("ropa", "PANTALON"));
+        comandos.add(new AddDonacionExpression("alimentos", "ATUN"));
         comandos.add(new ListDonacionesExpression());
 
         for (Expression comando : comandos) {

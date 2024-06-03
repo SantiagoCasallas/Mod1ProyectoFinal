@@ -21,7 +21,7 @@ public class Test {
         contexto.realizarDonacion(new Libro("cien años de soledad"));
         contexto.realizarDonacion(new Libro("el coronel no tiene quien le escriba"));
         contexto.setEstrategiaDonacion(new EstrategiaDonacionRopa()); //
-        contexto.realizarDonacion(ropa);
+        contexto.realizarDonacion(new Ropa("camiseta verde"));
 
         contexto.getRopa();
         imprimir(contexto, vista, libro);

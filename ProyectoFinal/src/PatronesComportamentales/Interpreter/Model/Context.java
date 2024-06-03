@@ -24,7 +24,7 @@ public class Context {
         } else {
             vista.mostrar("Lista de donaciones: (" + donaciones.size() + ")");
             for (Donacion donacion : donaciones) {
-                vista.mostrar("- " + donacion.getTipo());
+                vista.mostrar("- " + donacion.getTipo() + ": " + donacion.getDescripcion());
             }
         }
     }
