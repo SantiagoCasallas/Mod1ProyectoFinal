@@ -1,12 +1,13 @@
 package PatronesEstructurales.Flyweight.Controller;
 
+import java.util.ArrayList;
+
 import Interfaz.Interfaz;
 import PatronesEstructurales.Flyweight.Model.Contenedor;
 import PatronesEstructurales.Flyweight.Model.ContenedorAlimentos;
 import PatronesEstructurales.Flyweight.Model.ContenedorLimpieza;
 import PatronesEstructurales.Flyweight.Model.Producto;
 import PatronesEstructurales.Flyweight.Model.ProductoAlimienticio;
-import java.util.ArrayList;
 
 public class Test {
 
@@ -21,6 +22,14 @@ public class Test {
       producto = flyweight.getProductos("Arroz", "500 gr", "18 Mayo 2026");
       bodega.add((ProductoAlimienticio) producto);
     }
+    for (int i = 0; i < 30; i++) {
+      producto = flyweight.getProductos("Arroz", "1 kg", "18 Mayo 2026");
+      bodega.add((ProductoAlimienticio) producto);
+    }
+    for (int i = 0; i < 30; i++) {
+      producto = flyweight.getProductos("Harina", "500 gr", "18 Mayo 2026");
+      bodega.add((ProductoAlimienticio) producto);
+    }
     vista.mostrar("Tamaño bodega alimentos: " + bodega.size());
     vista.mostrar("Tamaño map Contenedor: " + flyweight.getTamañoContenedor());
     producto = flyweight.getProductos("Arroz", "1 kg", "18 Mayo 2026");
@@ -28,7 +37,10 @@ public class Test {
     vista.mostrar("Añadiendo un producto con clave diferente");
     vista.mostrar("Tamaño bodega alimentos: " + bodega.size());
     vista.mostrar("Tamaño map Contenedor: " + flyweight.getTamañoContenedor());
-    //----------------------------------------------------------------
+    // ---------
+    vista.mostrar("" + flyweight.getClaves() + " \n");
+
+    // ----------------------------------------------------------------
     vista.mostrar("------------------------------------------------");
     Contenedor flyweight2 = new ContenedorLimpieza();
     Producto producto2;
