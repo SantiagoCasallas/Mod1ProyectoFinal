@@ -1,6 +1,5 @@
 package PatronesComportamentales.Observer.Model;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
 
 public class Donacion {
